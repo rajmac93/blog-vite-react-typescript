@@ -1,5 +1,5 @@
-h2,
-p {
+.title--article {
+  font-size: 40px;
   color: var(--text-color);
   padding: 0 20px;
 }

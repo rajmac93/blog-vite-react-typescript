@@ -4,7 +4,7 @@ import Card from "../UI/Card";
 const Article = () => {
   return (
     <Card className={classes.article}>
-      <h2>Tytuł jakiegoś artykułu</h2>
+      <div className={classes["title--article"]}>Tytuł jakiegoś artykułu</div>
       <article>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis

@@ -1,14 +1,15 @@
 import classes from "../styles/Navbar.module.css";
+import CardSocial from "./UI/CardSocial";
 
 const Navbar = () => {
   return (
     <nav className={classes.navbar}>
       <ul>
-        <li>Facebook</li>
-        <li>Instagram</li>
-        <li>LinkedIn</li>
-        <li>Twitter</li>
-        <li>Github</li>
+        <CardSocial className={classes["social--title"]}>Facebook</CardSocial>
+        <CardSocial className={classes["social--title"]}>Instagram</CardSocial>
+        <CardSocial className={classes["social--title"]}>LinkedIn</CardSocial>
+        <CardSocial className={classes["social--title"]}>Twitter</CardSocial>
+        <CardSocial className={classes["social--title"]}>Github</CardSocial>
       </ul>
     </nav>
   );

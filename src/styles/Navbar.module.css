@@ -3,3 +3,8 @@
 .navbar {
   background-color: var(--main-bg-color);
 }
+
+.social--title {
+  width: auto;
+  padding: 10px;
+}
