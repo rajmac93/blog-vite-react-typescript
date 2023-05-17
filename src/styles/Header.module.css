@@ -2,9 +2,7 @@
   background-color: var(--main-color);
   width: 100vw;
   height: 20vh;
-  position: absolute;
-  top: 0;
-  left: 0;
+  text-align: center;
 }
 
 h1,

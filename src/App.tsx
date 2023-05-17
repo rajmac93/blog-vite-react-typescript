@@ -1,12 +1,14 @@
 import Header from "./components/Header";
-
-import classes from "./styles/App.module.css";
+import Navbar from "./components/Navbar";
+import Main from "./components/Main";
 
 function App() {
   return (
-    <div className={classes.main}>
+    <>
       <Header />
-    </div>
+      <Navbar />
+      <Main />
+    </>
   );
 }
 

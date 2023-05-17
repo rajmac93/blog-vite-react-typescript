@@ -1,0 +1,11 @@
+h2,
+p {
+  color: var(--text-color);
+  padding: 0 20px;
+}
+
+.article {
+  background-color: var(--main-color);
+  margin: 20px 0;
+  padding: 20px 0;
+}

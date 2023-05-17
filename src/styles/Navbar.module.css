@@ -1,0 +1,5 @@
+@import url(./shared.module.css);
+
+.navbar {
+  background-color: var(--main-bg-color);
+}
