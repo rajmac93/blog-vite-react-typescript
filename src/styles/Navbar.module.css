@@ -1,10 +1,33 @@
 @import url(./shared.module.css);
 
 .navbar {
-  background-color: var(--main-bg-color);
+  padding: 20px 0;
+  background: linear-gradient(
+    180deg,
+    var(--main-bg-color) 0%,
+    var(--main-bg-color-brighter) 100%
+  );
 }
-
-.social--title {
+.profile--container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.profile--image {
   width: auto;
+  height: 300px;
+}
+ul {
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px 0 10px;
+  display: flex;
+  flex-direction: row;
+}
+.social--title {
+  text-align: center;
+  color: var(--text-color);
+  width: 200px;
   padding: 10px;
+  margin: 5px 20px;
 }

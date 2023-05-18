@@ -1,12 +1,17 @@
 .post--container {
+  background-color: var(--main-color);
   display: flex;
   flex-direction: column;
   padding: 3%;
   margin: 0 2%;
 }
 
-.article {
-  background-color: var(--main-color);
-  margin: 20px 0;
-  padding: 20px 0;
+.title--article {
+  color: var(--text-color);
+  font-size: 40px;
+}
+
+.image {
+  width: auto;
+  height: 300px;
 }

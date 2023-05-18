@@ -1,4 +1,4 @@
 .card {
+  background-color: var(--button-color);
   border-radius: 50px;
-  border: 1px solid var(--text-color);
 }

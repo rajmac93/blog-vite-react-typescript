@@ -1,0 +1,19 @@
+.guides--baner {
+  font-family: "Roboto Condensed", sans-serif;
+
+  font-weight: 700;
+  color: var(--text-color);
+  font-size: small;
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  background: rgb(236, 0, 140);
+  background: linear-gradient(
+    90deg,
+    rgba(236, 0, 140, 1) 20%,
+    rgba(241, 91, 42, 1) 100%
+  );
+}
