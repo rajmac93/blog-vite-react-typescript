@@ -1,10 +1,10 @@
 import Post from "../Post/Post";
 import classes from "./Posts.module.css";
 
-interface Posts {
-  blogPosts: object[];
-}
-
+// objArr: {
+//   id: string;
+//   title: string;
+// }[];
 const Posts = () => {
   const blogPosts = [
     {

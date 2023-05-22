@@ -7,9 +7,15 @@ import classes from "../styles/GuidesBaner.module.css";
 
 const GuidesBaner = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const onClose = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <>
-      <Modal open={isOpen}>Fancy Modal</Modal>
+      <Modal open={isOpen} onClose={onClose}>
+        Fancy Modal
+      </Modal>
       <section className={classes["guides--baner"]}>
         <h2>
           Uzyskaj BEZPŁATNY dostęp do ponad 1300 poradników i ponad 50 darmowych
