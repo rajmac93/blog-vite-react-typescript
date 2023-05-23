@@ -1,42 +1,44 @@
+import ReactDOM from "react-dom";
+
 import Card from "./Card";
 import classes from "./Modal.module.css";
+import FormContact from "../FormContact";
 
-const Backdrop = (props: any) => {
-  return <div className={classes.backdrop} onClick={props.onClose}></div>;
+interface Backdrop {
+  onClose: any;
+}
+
+interface Modal {
+  open: boolean;
+  onClose: any;
+  children: string | JSX.Element | JSX.Element[];
+}
+
+const Backdrop = ({ onClose }: Backdrop) => {
+  return <div className={classes.backdrop} onClick={onClose}></div>;
 };
 
-const Modal = (props: any) => {
-  const sendFormHandle = (e) => {
-    e.preventDefault();
-    console.log("send to backend");
-  };
+const Modal = ({ open, onClose, children }: Modal) => {
+  if (!open) return null;
 
-  if (!props.open) return null;
-  return (
+  return ReactDOM.createPortal(
     <>
-      <Backdrop onClose={props.onClose} />
+      <Backdrop onClose={onClose} />
       <Card className={classes.modal}>
+        <header>
+          <h3>Formularz kontaktowy</h3>
+        </header>
         <main>
-          <form onSubmit={sendFormHandle}>
-            <label htmlFor="name">Imię</label>
-            <input id="name" type="text"></input>
-            <label htmlFor="surname">Nazwisko</label>
-            <input id="surname" type="text"></input>
-            <label htmlFor="email">E-mail</label>
-            <input id="email" type="e-mail"></input>
-            <label htmlFor="company">Firma</label>
-            <input id="company" type="text"></input>
-            <label htmlFor="phone">Telefon</label>
-            <input id="phone" type="tel"></input>
-            <button type="submit">WYŚLIJ!</button>
-          </form>
+          <FormContact />
         </main>
-        {props.children}
-        <button className={classes["close--button"]} onClick={props.onClose}>
+        {children}
+        {/* <button className={classes["close--button"]} onClick={onClose}>
           zamknij
-        </button>
+        </button> */}
       </Card>
-    </>
+    </>,
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+    document.getElementById("portal-modal")!
   );
 };
 

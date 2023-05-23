@@ -13,9 +13,7 @@ const GuidesBaner = () => {
 
   return (
     <>
-      <Modal open={isOpen} onClose={onClose}>
-        Fancy Modal
-      </Modal>
+      <Modal open={isOpen} onClose={onClose}></Modal>
       <section className={classes["guides--baner"]}>
         <h2>
           Uzyskaj BEZPŁATNY dostęp do ponad 1300 poradników i ponad 50 darmowych
