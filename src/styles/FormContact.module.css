@@ -31,3 +31,11 @@ select {
 .submit--button {
   width: 100%;
 }
+
+input,
+select:focus {
+  outline: none;
+}
+input:focus ~ label {
+  color: var(--pink);
+}

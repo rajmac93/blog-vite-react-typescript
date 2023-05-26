@@ -1,11 +1,15 @@
 import { useState } from "react";
 
-import ButtonGuideBanner from "./UI/ButtonGuideBanner";
-import Modal from "./UI/Modal";
+import ButtonGuideBanner from "./UI/Buttons/ButtonGuideBanner";
+import Modal from "./UI/Modals/Modal";
 
 import classes from "../styles/GuidesBaner.module.css";
 
-const GuidesBaner = () => {
+interface GuidesBaner {
+  children: React.ReactNode;
+}
+
+const GuidesBaner = ({ children }: GuidesBaner) => {
   const [isOpen, setIsOpen] = useState(false);
   const onClose = () => {
     setIsOpen(!isOpen);
@@ -13,7 +17,9 @@ const GuidesBaner = () => {
 
   return (
     <>
-      <Modal open={isOpen} onClose={onClose}></Modal>
+      <Modal open={isOpen} onClose={onClose}>
+        <>{children}</>
+      </Modal>
       <section className={classes["guides--baner"]}>
         <h2>
           Uzyskaj BEZPŁATNY dostęp do ponad 1300 poradników i ponad 50 darmowych
