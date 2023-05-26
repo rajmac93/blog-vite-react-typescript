@@ -1,16 +1,21 @@
-import Card from "../UI/Card";
-
-import Posts from "../data/Posts";
+import Card from "../UI/Cards/Card";
 
 import classes from "../../styles/Post.module.css";
+import LikeDislikeButton from "../UI/Buttons/LikeDislikeButton";
 
-// interface Posts {
-//   blogPosts: { title: string; body: string; author: string; imgUrl: string }[];
-// }
-// ({ post: { title, body, imgUrl, author }, index })
-const Post = ({ title, imgUrl, body, author }) => {
+interface Posts {
+  post: {
+    title: string;
+    imgUrl: string;
+    body: string;
+    author: string;
+  };
+  index: number;
+}
+const Post = ({ post: { title, imgUrl, body, author }, index }: Posts) => {
   return (
     <Card className={classes["post--container"]}>
+      <LikeDislikeButton />
       <article>
         <div className={classes["title--article"]}>{title}</div>
         <img className={classes.image} src={imgUrl} alt="post" />

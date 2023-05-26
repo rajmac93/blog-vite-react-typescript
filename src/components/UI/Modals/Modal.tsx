@@ -1,8 +1,8 @@
 import ReactDOM from "react-dom";
 
-import Card from "./Card";
+import Card from "../Cards/Card";
 import classes from "./Modal.module.css";
-import FormContact from "../FormContact";
+import FormContact from "../../FormContact";
 
 interface Backdrop {
   onClose: any;
@@ -11,7 +11,7 @@ interface Backdrop {
 interface Modal {
   open: boolean;
   onClose: any;
-  children: string | JSX.Element | JSX.Element[];
+  children: React.ReactNode;
 }
 
 const Backdrop = ({ onClose }: Backdrop) => {

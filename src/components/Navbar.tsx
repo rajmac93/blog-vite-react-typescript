@@ -1,5 +1,5 @@
 import classes from "../styles/Navbar.module.css";
-import CardSocial from "./UI/CardSocial";
+import CardSocial from "./UI/Cards/CardSocial";
 
 const Navbar = () => {
   return (
