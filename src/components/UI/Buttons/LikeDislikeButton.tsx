@@ -1,4 +1,6 @@
-import useState from "react";
+import { useState } from "react";
+
+import classes from "./LikeDislikeButton.module.css";
 
 const LikeDislikeButton = () => {
   const [likeCount, setLikeCount] = useState(50);
@@ -46,21 +48,27 @@ const LikeDislikeButton = () => {
   };
 
   return (
-    <div className="container">
-      <div className="btn-container">
+    <div className={classes["container--like-dislike"]}>
+      <div className={classes["btn-container"]}>
         <button
-          className={`btn ${activeBtn === "like" ? "like-active" : ""}`}
+          className={
+            classes[`btn ${activeBtn === "like" ? "like-active" : ""}`]
+          }
           onClick={handleLikeClick}
         >
-          <span className="material-symbols-rounded">thumb_up</span>
+          <span className={classes["material-symbols-rounded"]}>thumb_up</span>
           Like {likeCount}
         </button>
 
         <button
-          className={`btn ${activeBtn === "dislike" ? "dislike-active" : ""}`}
+          className={
+            classes[`btn ${activeBtn === "dislike" ? "dislike-active" : ""}`]
+          }
           onClick={handleDisikeClick}
         >
-          <span className="material-symbols-rounded">thumb_down</span>
+          <span className={classes["material-symbols-rounded"]}>
+            thumb_down
+          </span>
           Dislike {dislikeCount}
         </button>
       </div>
