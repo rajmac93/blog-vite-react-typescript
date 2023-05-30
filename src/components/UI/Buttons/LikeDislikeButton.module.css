@@ -1,25 +1,15 @@
-* {
-  font-family: "Poppins", sans-serif;
-  padding: 0;
-  margin: 0;
-}
-
 .container--like-dislike {
-  /* width: 100vw;
-  height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #f0f1f3;
 }
 
 .btn-container {
   display: flex;
   flex-direction: "row";
   align-items: center;
-  background-color: #fff;
-  padding: 30px 50px;
+  padding: 30px 15px;
   border-radius: 12px;
 }
 
@@ -30,16 +20,26 @@
   display: flex;
   align-items: center;
   gap: 6px;
-  background-color: #bdc0c5;
+  background-color: var(--second-color);
   border-radius: 4px;
   padding: 6px 15px;
   margin: 0 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.react-icons {
+  font-size: 20px;
 }
 
 .like-active {
-  background-color: #ff0063;
+  background-color: var(--like-button);
 }
 
 .dislike-active {
-  background-color: #394350;
+  background-color: var(--dislike-button);
 }

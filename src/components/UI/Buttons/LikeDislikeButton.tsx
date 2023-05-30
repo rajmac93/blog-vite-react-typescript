@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { AiOutlineLike, AiOutlineDislike } from "react-icons/ai";
 import classes from "./LikeDislikeButton.module.css";
 
 const LikeDislikeButton = () => {
@@ -42,6 +42,7 @@ const LikeDislikeButton = () => {
 
     if (activeBtn === "like") {
       setDislikeCount(dislikeCount + 1);
+
       setLikeCount(likeCount - 1);
       setActiveBtn("dislike");
     }
@@ -51,25 +52,27 @@ const LikeDislikeButton = () => {
     <div className={classes["container--like-dislike"]}>
       <div className={classes["btn-container"]}>
         <button
-          className={
-            classes[`btn ${activeBtn === "like" ? "like-active" : ""}`]
-          }
+          className={`${classes.btn} ${
+            activeBtn === "like" ? classes["like-active"] : ""
+          }`}
           onClick={handleLikeClick}
         >
-          <span className={classes["material-symbols-rounded"]}>thumb_up</span>
-          Like {likeCount}
+          <span className={classes["react-icons"]}>
+            <AiOutlineLike />
+          </span>
+          {likeCount}
         </button>
 
         <button
-          className={
-            classes[`btn ${activeBtn === "dislike" ? "dislike-active" : ""}`]
-          }
+          className={`${classes.btn} ${
+            activeBtn === "dislike" ? classes["dislike-active"] : ""
+          }`}
           onClick={handleDisikeClick}
         >
-          <span className={classes["material-symbols-rounded"]}>
-            thumb_down
+          <span className={classes["react-icons"]}>
+            <AiOutlineDislike />
           </span>
-          Dislike {dislikeCount}
+          {dislikeCount}
         </button>
       </div>
     </div>

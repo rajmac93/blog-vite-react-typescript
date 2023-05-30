@@ -1,5 +1,14 @@
 import classes from "../styles/Navbar.module.css";
 import CardSocial from "./UI/Cards/CardSocial";
+import {
+  AiOutlineFacebook,
+  AiOutlineInstagram,
+  AiOutlineLinkedin,
+  AiOutlineTwitter,
+  AiOutlineGithub,
+} from "react-icons/ai";
+
+import { SiWakatime } from "react-icons/si";
 
 const Navbar = () => {
   return (
@@ -11,13 +20,46 @@ const Navbar = () => {
           alt="mojefoto"
         ></img>
       </div>
-      <ul>
-        <CardSocial className={classes["social--title"]}>Facebook</CardSocial>
-        <CardSocial className={classes["social--title"]}>Instagram</CardSocial>
-        <CardSocial className={classes["social--title"]}>LinkedIn</CardSocial>
-        <CardSocial className={classes["social--title"]}>Twitter</CardSocial>
-        <CardSocial className={classes["social--title"]}>Github</CardSocial>
-      </ul>
+      <div className={classes["social--wrapper"]}>
+        <p>
+          <span className={classes["social--label"]}>Możesz mnie znaleźć:</span>
+        </p>
+        <ul>
+          <a href="https://www.facebook.com/maciej.rajtar.1/" target="_blank">
+            <CardSocial className={classes["social--title"]}>
+              <AiOutlineFacebook />
+            </CardSocial>
+          </a>
+          <a href="https://www.instagram.com/rajmacc/" target="_blank">
+            <CardSocial className={classes["social--title"]}>
+              <AiOutlineInstagram />
+            </CardSocial>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/maciej-rajtar-854066180/"
+            target="_blank"
+          >
+            <CardSocial className={classes["social--title"]}>
+              <AiOutlineLinkedin />
+            </CardSocial>
+          </a>
+          <a href="https://twitter.com/rajtar_maciej" target="_blank">
+            <CardSocial className={classes["social--title"]}>
+              <AiOutlineTwitter />
+            </CardSocial>
+          </a>
+          <a href="https://github.com/rajmac93" target="_blank">
+            <CardSocial className={classes["social--title"]}>
+              <AiOutlineGithub />
+            </CardSocial>
+          </a>
+          <a href="https://wakatime.com/@Rajtar" target="_blank">
+            <CardSocial className={classes["social--title"]}>
+              <SiWakatime />
+            </CardSocial>
+          </a>
+        </ul>
+      </div>
     </nav>
   );
 };
