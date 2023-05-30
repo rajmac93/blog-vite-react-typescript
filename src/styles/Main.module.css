@@ -1,4 +1,8 @@
 .main {
-  background-color: var(--second-color);
+  background: linear-gradient(
+    137deg,
+    var(--background-main-gradient-color) 0%,
+    var(--background-second-main-gradient-color) 100%
+  );
   height: 100%;
 }
