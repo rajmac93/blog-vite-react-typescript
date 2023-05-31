@@ -1,3 +1,5 @@
+import ButtonSubmit from "./UI/Buttons/ButtonSubmit";
+
 import classes from "../styles/FormContact.module.css";
 
 const FormContact = () => {
@@ -41,9 +43,8 @@ const FormContact = () => {
             </select>
           </div>
         </div>
-        <button type="submit" className={classes["submit--button"]}>
-          WYŚLIJ!
-        </button>
+
+        <ButtonSubmit type="submit">WYŚLIJ</ButtonSubmit>
       </form>
     </div>
   );

@@ -11,10 +11,10 @@
   flex-wrap: wrap;
   min-height: 80px;
   height: auto;
-  background: rgb(236, 0, 140);
+  background: var(--banner-first-color);
   background: linear-gradient(
     90deg,
-    rgba(236, 0, 140, 1) 20%,
-    rgba(241, 91, 42, 1) 100%
+    var(--banner-first-color) 20%,
+    var(--banner-second-color) 100%
   );
 }
