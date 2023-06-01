@@ -8,11 +8,14 @@ interface Posts {
     title: string;
     imgUrl: string;
     body: string;
-    author: string;
+    first_name: string;
+    last_name: string;
   };
   index: number;
 }
-const Post = ({ post: { title, imgUrl, body, author }, index }: Posts) => {
+const Post = ({
+  post: { title, imgUrl, body, first_name, last_name },
+}: Posts) => {
   return (
     <Card className={classes["post--container"]}>
       <article>
@@ -21,7 +24,7 @@ const Post = ({ post: { title, imgUrl, body, author }, index }: Posts) => {
 
         <p>{body}</p>
         <div className={classes.info}>
-          <h4>Written by: {author}</h4>
+          <h4>Written by: {`${first_name} ${last_name}`}</h4>
         </div>
       </article>
       <LikeDislikeButton />
