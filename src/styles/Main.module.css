@@ -1,10 +1,6 @@
 .main {
   display: flex;
   flex-wrap: wrap;
-  background: linear-gradient(
-    137deg,
-    var(--background-main-gradient-color) 0%,
-    var(--background-second-main-gradient-color) 100%
-  );
+  background: transparent;
   height: 100%;
 }
