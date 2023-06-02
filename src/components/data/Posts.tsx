@@ -5,6 +5,8 @@ import Data from "../data/post-data.json";
 
 const Posts = () => {
   const [query, setQuery] = useState("");
+  const data = Data["data"];
+
   return (
     <>
       <input
@@ -13,15 +15,17 @@ const Posts = () => {
         onChange={(event) => setQuery(event.target.value)}
       />
       <div className={classes["posts-container"]}>
-        {Data.filter((post) => {
-          if (query === "") {
-            return post;
-          } else if (post.title.toLowerCase().includes(query.toLowerCase())) {
-            return post;
-          }
-        }).map((post) => (
-          <Post key={post.id} post={post} />
-        ))}
+        {data
+          .filter((post) => {
+            if (query === "") {
+              return post;
+            } else if (post.title.toLowerCase().includes(query.toLowerCase())) {
+              return post;
+            }
+          })
+          .map((post) => (
+            <Post key={post.id} post={post} />
+          ))}
       </div>
     </>
   );

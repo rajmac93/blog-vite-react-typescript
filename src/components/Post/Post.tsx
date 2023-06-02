@@ -11,7 +11,6 @@ interface Posts {
     first_name: string;
     last_name: string;
   };
-  index: number;
 }
 const Post = ({
   post: { title, imgUrl, body, first_name, last_name },
@@ -22,7 +21,7 @@ const Post = ({
         <div className={classes["title--article"]}>{title}</div>
         <img className={classes.image} src={imgUrl} alt="post" />
 
-        <p>{body}</p>
+        <p className={classes.article}>{body}</p>
         <div className={classes.info}>
           <h4>Written by: {`${first_name} ${last_name}`}</h4>
         </div>

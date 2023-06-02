@@ -3,3 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background: linear-gradient(
+    137deg,
+    var(--background-main-gradient-color) 0%,
+    var(--background-second-main-gradient-color) 100%
+  );
+}

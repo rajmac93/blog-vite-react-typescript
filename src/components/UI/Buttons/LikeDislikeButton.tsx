@@ -3,8 +3,10 @@ import { AiOutlineLike, AiOutlineDislike } from "react-icons/ai";
 import classes from "./LikeDislikeButton.module.css";
 
 const LikeDislikeButton = () => {
-  const [likeCount, setLikeCount] = useState(50);
-  const [dislikeCount, setDislikeCount] = useState(25);
+  const [likeCount, setLikeCount] = useState(Math.floor(Math.random() * 100));
+  const [dislikeCount, setDislikeCount] = useState(
+    Math.floor(Math.random() * 100)
+  );
   const [activeBtn, setActiveBtn] = useState("none");
 
   const handleLikeClick = () => {
