@@ -6,7 +6,7 @@ import Modal from "./UI/Modals/Modal";
 import classes from "../styles/GuidesBaner.module.css";
 
 interface GuidesBaner {
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
 const GuidesBaner = ({ children }: GuidesBaner) => {
@@ -22,8 +22,8 @@ const GuidesBaner = ({ children }: GuidesBaner) => {
       </Modal>
       <section className={classes["guides--baner"]}>
         <h2>
-          Uzyskaj BEZPŁATNY dostęp do ponad 1300 poradników i ponad 50 darmowych
-          kursów co miesiąc
+          Uzyskaj BEZPŁATNY dostęp do ponad 1300 poradników
+          i ponad 50 darmowych kursów co miesiąc
         </h2>
         <ButtonGuideBanner onClick={() => setIsOpen(true)}>
           Learn More

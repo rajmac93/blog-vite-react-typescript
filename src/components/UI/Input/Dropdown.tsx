@@ -20,16 +20,22 @@ interface Option {
   value: string;
 }
 
-const Dropdown = ({ placeholder, options, onChange }: Dropdown) => {
+const Dropdown = ({
+  placeholder,
+  options,
+  onChange,
+}: Dropdown) => {
   const [showMenu, setShowMenu] = useState<boolean>(false);
-  const [selectedValue, setSelectedValue] = useState<any>(null);
+  const [selectedValue, setSelectedValue] =
+    useState<any>(null);
 
   useEffect(() => {
     const handler = () => {
       setShowMenu(false);
 
       window.addEventListener("click", handler);
-      return () => window.removeEventListener("click", handler);
+      return () =>
+        window.removeEventListener("click", handler);
     };
   });
 
@@ -59,8 +65,13 @@ const Dropdown = ({ placeholder, options, onChange }: Dropdown) => {
 
   return (
     <div className={classes["dropdown--container"]}>
-      <div onClick={handleInputClick} className={classes["dropdown--input"]}>
-        <div className={classes["dropdown--selected__value"]}>
+      <div
+        onClick={handleInputClick}
+        className={classes["dropdown--input"]}
+      >
+        <div
+          className={classes["dropdown--selected__value"]}
+        >
           {getDisplay()}
         </div>
         <div className="dropdown-tools">
