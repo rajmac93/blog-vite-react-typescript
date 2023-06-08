@@ -12,13 +12,11 @@ label {
 }
 .form--contact__label-input {
   padding: 5px;
-
   width: auto;
   height: 100px;
 }
 
-input,
-select {
+input {
   font-size: 15px;
   padding-left: 12px;
   border-radius: 10px;
