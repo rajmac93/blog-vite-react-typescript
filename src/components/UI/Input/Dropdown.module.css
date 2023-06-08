@@ -1,11 +1,12 @@
 .dropdown--container {
-  transform: translateY(23px);
+  transform: translateY(28px);
   font-size: 15px;
+  margin: 0 0 0 4px;
   padding: 14px 12px 0 12px;
   border-radius: 10px;
   color: var(--text-color);
   background: var(--main-bg-color-input);
-  width: 100%;
+  width: 98%;
   height: 50px;
   border: none;
 }
@@ -42,4 +43,14 @@
 
 .selected {
   background-color: var(--main-bg-color);
+}
+
+@media only screen and (max-width: 1180px) {
+  .dropdown--container {
+    align-items: center;
+    transform: translate(0, 18px);
+  }
+  .dropdown--menu {
+    transform: translate(-11px, -140px);
+  }
 }

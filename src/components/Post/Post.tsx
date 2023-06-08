@@ -18,12 +18,20 @@ const Post = ({
   return (
     <Card className={classes["post--container"]}>
       <article>
-        <div className={classes["title--article"]}>{title}</div>
-        <img className={classes.image} src={imgUrl} alt="post" />
+        <div className={classes["title--article"]}>
+          {title}
+        </div>
+        <img
+          className={classes.image}
+          src={imgUrl}
+          alt="post"
+        />
 
         <p className={classes["post--article"]}>{body}</p>
         <div className={classes.info}>
-          <h4>Written by: {`${first_name} ${last_name}`}</h4>
+          <h4>
+            Written by: {`${first_name} ${last_name}`}
+          </h4>
         </div>
       </article>
       <LikeDislikeButton />
