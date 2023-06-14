@@ -1,0 +1,46 @@
+"filename", "language", "HTML", "TypeScript", "JSON", "JSON with Comments", "TypeScript JSX", "CSS", "XML", "JavaScript", "comment", "blank", "total"
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\.eslintrc.cjs", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 14, 0, 1, 15
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\index.html", "HTML", 15, 0, 0, 0, 0, 0, 0, 0, 0, 1, 16
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\package-lock.json", "JSON", 0, 0, 5062, 0, 0, 0, 0, 0, 0, 1, 5063
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\package.json", "JSON", 0, 0, 35, 0, 0, 0, 0, 0, 0, 1, 36
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\public\blog.svg", "XML", 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\src\App.tsx", "TypeScript JSX", 0, 0, 0, 0, 13, 0, 0, 0, 0, 3, 16
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\src\assets\icons\icons.svg", "XML", 0, 0, 0, 0, 0, 0, 5, 0, 0, 1, 6
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\src\components\FormContact.tsx", "TypeScript JSX", 0, 0, 0, 0, 125, 0, 0, 0, 0, 17, 142
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\src\components\GuidesBaner.tsx", "TypeScript JSX", 0, 0, 0, 0, 30, 0, 0, 0, 0, 7, 37
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\src\components\Main.tsx", "TypeScript JSX", 0, 0, 0, 0, 10, 0, 0, 0, 0, 3, 13
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\src\components\Navbar.tsx", "TypeScript JSX", 0, 0, 0, 0, 64, 0, 0, 0, 0, 4, 68
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\src\components\Post\Post.tsx", "TypeScript JSX", 0, 0, 0, 0, 38, 0, 0, 0, 0, 5, 43
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\src\components\UI\Buttons\ButtonGuideBanner.module.css", "CSS", 0, 0, 0, 0, 0, 12, 0, 0, 0, 3, 15
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\src\components\UI\Buttons\ButtonGuideBanner.tsx", "TypeScript JSX", 0, 0, 0, 0, 12, 0, 0, 0, 0, 3, 15
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\src\components\UI\Buttons\ButtonSubmit.module.css", "CSS", 0, 0, 0, 0, 0, 20, 0, 0, 0, 2, 22
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\src\components\UI\Buttons\ButtonSubmit.tsx", "TypeScript JSX", 0, 0, 0, 0, 15, 0, 0, 0, 0, 4, 19
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\src\components\UI\Buttons\LikeDislikeButton.module.css", "CSS", 0, 0, 0, 0, 0, 39, 0, 0, 0, 7, 46
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\src\components\UI\Buttons\LikeDislikeButton.tsx", "TypeScript JSX", 0, 0, 0, 0, 73, 0, 0, 0, 0, 12, 85
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\src\components\UI\Cards\Card.module.css", "CSS", 0, 0, 0, 0, 0, 4, 0, 0, 0, 1, 5
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\src\components\UI\Cards\Card.tsx", "TypeScript JSX", 0, 0, 0, 0, 7, 0, 0, 0, 0, 3, 10
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\src\components\UI\Cards\CardSocial.module.css", "CSS", 0, 0, 0, 0, 0, 4, 0, 0, 0, 1, 5
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\src\components\UI\Cards\CardSocial.tsx", "TypeScript JSX", 0, 0, 0, 0, 7, 0, 0, 0, 0, 3, 10
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\src\components\UI\Input\Dropdown.module.css", "CSS", 0, 0, 0, 0, 0, 51, 0, 0, 0, 6, 57
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\src\components\UI\Input\Dropdown.tsx", "TypeScript JSX", 0, 0, 0, 0, 90, 0, 0, 0, 0, 13, 103
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\src\components\UI\Input\Input.tsx", "TypeScript JSX", 0, 0, 0, 0, 36, 0, 0, 0, 0, 4, 40
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\src\components\UI\Modals\Modal.module.css", "CSS", 0, 0, 0, 0, 0, 34, 0, 0, 0, 4, 38
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\src\components\UI\Modals\Modal.tsx", "TypeScript JSX", 0, 0, 0, 0, 34, 0, 0, 0, 4, 8, 46
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\src\components\data\Posts.module.css", "CSS", 0, 0, 0, 0, 0, 17, 0, 0, 0, 1, 18
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\src\components\data\Posts.tsx", "TypeScript JSX", 0, 0, 0, 0, 31, 0, 0, 0, 0, 4, 35
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\src\components\data\post-data.json", "JSON", 0, 0, 6268, 0, 0, 0, 0, 0, 0, 1, 6269
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\src\main.tsx", "TypeScript JSX", 0, 0, 0, 0, 9, 0, 0, 0, 0, 2, 11
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\src\styles\FormContact.module.css", "CSS", 0, 0, 0, 0, 0, 40, 0, 0, 0, 5, 45
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\src\styles\GuidesBaner.module.css", "CSS", 0, 0, 0, 0, 0, 20, 0, 0, 0, 1, 21
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\src\styles\Header.module.css", "CSS", 0, 0, 0, 0, 0, 19, 0, 0, 0, 3, 22
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\src\styles\Main.module.css", "CSS", 0, 0, 0, 0, 0, 6, 0, 0, 0, 1, 7
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\src\styles\Navbar.module.css", "CSS", 0, 0, 0, 0, 0, 51, 0, 0, 1, 4, 56
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\src\styles\Post.module.css", "CSS", 0, 0, 0, 0, 0, 37, 0, 0, 0, 5, 42
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\src\styles\index.css", "CSS", 0, 0, 0, 0, 0, 12, 0, 0, 0, 1, 13
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\src\styles\shared.module.css", "CSS", 0, 0, 0, 0, 0, 17, 0, 0, 0, 2, 19
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\src\utils\index.ts", "TypeScript", 0, 17, 0, 0, 0, 0, 0, 0, 0, 2, 19
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\src\vite-env.d.ts", "TypeScript", 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 2
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\tsconfig.json", "JSON with Comments", 0, 0, 0, 20, 0, 0, 0, 0, 2, 3, 25
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\tsconfig.node.json", "JSON", 0, 0, 10, 0, 0, 0, 0, 0, 0, 1, 11
+"d:\webDevelopment\blog--react--vite--typescript\blog--react--vite--typescript\vite.config.ts", "TypeScript", 0, 5, 0, 0, 0, 0, 0, 0, 1, 2, 8
+"Total", "-", 15, 22, 11375, 20, 594, 383, 6, 14, 9, 157, 12595

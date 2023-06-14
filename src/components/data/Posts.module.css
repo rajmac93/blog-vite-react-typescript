@@ -15,3 +15,10 @@
   background: var(--second-color);
   color: var(--main-bg-color);
 }
+
+.loader {
+  position: fixed;
+  left: 50%;
+  top: 90%;
+  transform: translate(-50%, -50%);
+}
