@@ -27,36 +27,24 @@ const FormContact = () => {
   const [company, setCompany] = useState<string>("");
   const [country, setCountry] = useState<string>("");
 
-  const nameHandler = (
-    e: ChangeEvent<HTMLInputElement>
-  ) => {
+  const nameHandler = (e: ChangeEvent<HTMLInputElement>) => {
     setName(e.target.value);
   };
 
-  const surnameHandler = (
-    e: ChangeEvent<HTMLInputElement>
-  ) => {
+  const surnameHandler = (e: ChangeEvent<HTMLInputElement>) => {
     setSurname(e.target.value);
   };
 
-  const emailHandler = (
-    e: ChangeEvent<HTMLInputElement>
-  ) => {
+  const emailHandler = (e: ChangeEvent<HTMLInputElement>) => {
     setEmail(e.target.value);
   };
 
-  const phoneHandler = (
-    e: ChangeEvent<HTMLInputElement>
-  ) => {
-    const targetValue = phoneNumberAutoFormat(
-      e.target.value
-    );
+  const phoneHandler = (e: ChangeEvent<HTMLInputElement>) => {
+    const targetValue = phoneNumberAutoFormat(e.target.value);
     setPhone(targetValue);
   };
 
-  const companyHandler = (
-    e: ChangeEvent<HTMLInputElement>
-  ) => {
+  const companyHandler = (e: ChangeEvent<HTMLInputElement>) => {
     setCompany(e.target.value);
   };
 
@@ -64,9 +52,7 @@ const FormContact = () => {
     setCountry(e);
   };
 
-  const sendFormHandle = (
-    e: React.FormEvent<HTMLFormElement>
-  ) => {
+  const sendFormHandle = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     console.log({
