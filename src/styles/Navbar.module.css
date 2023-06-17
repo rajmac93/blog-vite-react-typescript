@@ -19,7 +19,7 @@
   width: auto;
   height: 300px;
 }
-ul {
+.ul {
   /* background-color: aqua; */
   display: flex;
   flex-wrap: wrap-reverse;
@@ -35,8 +35,12 @@ ul {
   justify-content: center;
 }
 .social--label {
+  text-transform: uppercase;
+  font-weight: bolder;
   font-size: 1.5rem;
+  letter-spacing: 7px;
 }
+
 .social--title {
   display: flex;
   text-align: center;

@@ -1,4 +1,4 @@
-import Navbar from "./components/Navbar";
+import Navbar from "./Navbar/Navbar";
 import Main from "./components/Main";
 import GuidesBaner from "./components/GuidesBaner";
 

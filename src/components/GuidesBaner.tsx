@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import ButtonGuideBanner from "./UI/Buttons/ButtonGuideBanner";
 import Modal from "./UI/Modals/Modal";
@@ -15,16 +15,22 @@ const GuidesBaner = ({ children }: GuidesBaner) => {
     setIsOpen(!isOpen);
   };
 
+  useEffect(() => {
+    // disabling scrolling when modal is open
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [isOpen]);
+
   return (
     <>
       <Modal open={isOpen} onClose={onClose}>
         <>{children}</>
       </Modal>
       <section className={classes["guides--baner"]}>
-        <h2>
-          Uzyskaj BEZPŁATNY dostęp do ponad 1300 poradników
-          i ponad 50 darmowych kursów co miesiąc
-        </h2>
+        <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </h2>
         <ButtonGuideBanner onClick={() => setIsOpen(true)}>
           Learn More
         </ButtonGuideBanner>

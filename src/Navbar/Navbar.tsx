@@ -1,5 +1,6 @@
 import classes from "../styles/Navbar.module.css";
-import CardSocial from "./UI/Cards/CardSocial";
+import CardSocial from "../components/UI/Cards/CardSocial";
+
 import {
   AiOutlineFacebook,
   AiOutlineInstagram,
@@ -22,9 +23,10 @@ const Navbar = () => {
       </div>
       <div className={classes["social--wrapper"]}>
         <p>
-          <span className={classes["social--label"]}>Możesz mnie znaleźć:</span>
+          <span className={classes["social--label"]}>U can find me: </span>
         </p>
-        <ul>
+
+        <ul className={classes.ul}>
           <a href="https://www.facebook.com/maciej.rajtar.1/" target="_blank">
             <CardSocial className={classes["social--title"]}>
               <AiOutlineFacebook />
